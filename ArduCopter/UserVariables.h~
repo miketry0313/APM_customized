@@ -6,10 +6,6 @@
 // variables
 #ifdef USERHOOK_VARIABLES
 int fflag=0;
-long pitch_command;
-long yaw_command;
-long thrust_command;
-long roll_command;
 #if WII_CAMERA == 1
 WiiCamera           ircam;
 int                 WiiRange=0;

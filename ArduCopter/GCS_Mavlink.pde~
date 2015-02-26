@@ -1895,7 +1895,6 @@ mission_failed:
             break;
        if (fflag==1)
             break;
-       //TODO:Not sure scaled fomula for
        roll_command = (long)(mavlink_msg_set_roll_pitch_yaw_thrust_get_roll(msg)*100.0*180.0/3.14159); //100 unknown
        pitch_command = (long)(mavlink_msg_set_roll_pitch_yaw_thrust_get_pitch(msg)*100.0*180.0/3.14159);
        yaw_command = (long)(mavlink_msg_set_roll_pitch_yaw_thrust_get_yaw(msg)*100.0*180.0/3.14159);
