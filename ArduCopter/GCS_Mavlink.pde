@@ -1900,7 +1900,6 @@ mission_failed:
        pitch_command = (long)(mavlink_msg_set_roll_pitch_yaw_thrust_get_pitch(msg)*100.0*180.0/3.14159);
        yaw_command = (long)(mavlink_msg_set_roll_pitch_yaw_thrust_get_yaw(msg)*100.0*180.0/3.14159);
        thrust_command = (long)(mavlink_msg_set_roll_pitch_yaw_thrust_get_thrust(msg)*1000.0);
-       command_fs_timer=millis();
        break;
       }
 
