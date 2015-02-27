@@ -433,9 +433,9 @@ static void NOINLINE send_raw_imu1(mavlink_channel_t chan)
         gyro.x * 1000.0f,
         gyro.y * 1000.0f,
         gyro.z * 1000.0f,
-        compass.mag_x,
-        compass.mag_y,
-        compass.mag_z);
+        pitch_command*1000.0f,
+        roll_command*1000.0f,
+        thrust_command;
 }
 
 static void NOINLINE send_raw_imu2(mavlink_channel_t chan)
